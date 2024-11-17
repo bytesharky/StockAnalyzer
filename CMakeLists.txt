@@ -5,13 +5,21 @@ project(StockAnalyzer)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+# 设置vcpkg工具链文件路径相关的公共部分作为变量
+set(VCPKG_INSTALL_DIR "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static")
+
 # 设置 vcpkg 工具链
-set(CMAKE_TOOLCHAIN_FILE "C:/Users/Sharky/Desktop/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
-set(wxWidgets_DIR "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/wxwidgets")
-set(NanoSVG_DIR "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/nanosvg")
-set(CURL_DIR "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/curl")
-set(ZLIB_INCLUDE_DIR "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/include")
-set(ZLIB_LIBRARY_RELEASE "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/lib/zlib.lib")
+set(CMAKE_TOOLCHAIN_FILE "${VCPKG_INSTALL_DIR}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+
+# 设置各个库的相关路径
+set(wxWidgets_DIR "${VCPKG_INSTALL_DIR}/share/wxwidgets")
+set(NanoSVG_DIR "${VCPKG_INSTALL_DIR}/share/nanosvg")
+set(CURL_DIR "${VCPKG_INSTALL_DIR}/share/curl")
+
+# 设置zlib相关路径
+set(ZLIB_INCLUDE_DIR "${VCPKG_INSTALL_DIR}/include")
+set(ZLIB_LIBRARY_RELEASE "${VCPKG_INSTALL_DIR}/lib/zlib.lib")
 
 # 强制链接静态库
 set(BUILD_SHARED_LIBS OFF)

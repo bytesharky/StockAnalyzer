@@ -1,0 +1,3 @@
+C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/StockAnalyzer.dir
+C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/ZERO_CHECK.dir
