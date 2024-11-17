@@ -1,0 +1,43 @@
+第一步，自动导出可以翻译的字符
+xgettext -o stock.pot --from-code=UTF-8 --keyword=_ ..\src\Config.cpp ..\src\main.cpp ..\src\MainWindow.cpp ..\src\StockData.cpp
+
+第二步，生成翻译文件
+
+msginit --input=stock.pot --locale=zh --output=stock_zh.po
+
+建议修改编码 "Content-Type: text/plain; charset=UTF-8\n"
+
+手动翻译此文件
+
+第三步，添加标准翻译
+
+#: ../include/wx/msgdlg.h:278 ../src/common/stockitem.cpp:212
+msgid "Yes"
+msgstr "是"
+
+#: ../include/wx/msgdlg.h:279 ../src/common/stockitem.cpp:183
+msgid "No"
+msgstr "否"
+
+#: ../include/wx/msgdlg.h:280 ../src/common/stockitem.cpp:184
+#: ../src/msw/msgdlg.cpp:447 ../src/msw/msgdlg.cpp:751
+#: ../src/richtext/richtextstyledlg.cpp:293
+msgid "OK"
+msgstr "确认"
+
+#: ../include/wx/msgdlg.h:281 ../src/common/stockitem.cpp:151
+#: ../src/msw/msgdlg.cpp:447 ../src/msw/progdlg.cpp:884
+#: ../src/richtext/richtextstyledlg.cpp:296
+msgid "Cancel"
+msgstr "取消"
+
+#: ../include/wx/msgdlg.h:282 ../src/common/stockitem.cpp:169
+#: ../src/html/helpdlg.cpp:63 ../src/html/helpfrm.cpp:108
+#: ../src/osx/button_osx.cpp:39
+msgid "Help"
+msgstr "帮助"
+
+
+第四步，编译翻译文件
+
+msgfmt -o stock_zh.mo stock_zh.po

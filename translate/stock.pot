@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-18 02:50+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\src\main.cpp:56
+msgid ""
+"Announcement\n"
+"\n"
+"The data is sourced from the network.\n"
+"The analysis results are only for reference.\n"
+"Regarding the accuracy and quality issues of the data,\n"
+"this tool shall not be held responsible in any way."
+msgstr ""
+
+#: ..\src\main.cpp:61
+msgid "Announcement"
+msgstr ""
+
+#: ..\src\MainWindow.cpp:7
+msgid "Stock Data Analyzer"
+msgstr ""
+
+#: ..\src\MainWindow.cpp:36 ..\src\MainWindow.cpp:87
+msgid "Get Data"
+msgstr ""
+
+#: ..\src\MainWindow.cpp:38
+msgid "Select Stock Code:"
+msgstr ""
+
+#: ..\src\MainWindow.cpp:45
+#, c-format
+msgid "Copyright %s 2024 ByteSharky All rights reserved."
+msgstr ""
+
+#: ..\src\MainWindow.cpp:71
+msgid "Please enter a stock code"
+msgstr ""
+
+#: ..\src\MainWindow.cpp:71 ..\src\StockData.cpp:249 ..\src\StockData.cpp:274
+#: ..\src\StockData.cpp:306
+msgid "Error"
+msgstr ""
+
+#: ..\src\MainWindow.cpp:76
+msgid "Querying..."
+msgstr ""
+
+#: ..\src\StockData.cpp:50
+msgid "Failed to allocate memory"
+msgstr ""
+
+#: ..\src\StockData.cpp:69 ..\src\StockData.cpp:82
+msgid "No data available for analysis"
+msgstr ""
+
+#: ..\src\StockData.cpp:69 ..\src\StockData.cpp:82
+msgid "Information"
+msgstr ""
+
+#: ..\src\StockData.cpp:145
+#, c-format
+msgid ""
+"Buy Orders Analysis (%d):\n"
+"Prices - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Transaction Amounts - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Most Recent - Price: %.2f, Volume: %d\n"
+"\n"
+"Sell Orders Analysis (%d):\n"
+"Prices - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Transaction Amounts - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Most Recent - Price: %.2f, Volume: %d"
+msgstr ""
+
+#: ..\src\StockData.cpp:161
+msgid "Analysis Results"
+msgstr ""
+
+#: ..\src\StockData.cpp:176
+msgid "Failed to initialize CURL"
+msgstr ""
+
+#: ..\src\StockData.cpp:197
+#, c-format
+msgid "CURL request failed: %s"
+msgstr ""
+
+#: ..\src\StockData.cpp:201
+#, c-format
+msgid "HTTP request failed with status code: %d"
+msgstr ""
+
+#: ..\src\StockData.cpp:249
+msgid "Error: Missing fields in data"
+msgstr ""
+
+#: ..\src\StockData.cpp:274
+#, c-format
+msgid "Error parsing data: %s"
+msgstr ""
+
+#: ..\src\StockData.cpp:305
+#, c-format
+msgid "Error occurred while fetching data on page %d: %s"
+msgstr ""

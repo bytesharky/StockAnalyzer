@@ -1,0 +1,160 @@
+# Chinese translations for PACKAGE package.
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-18 00:49+0800\n"
+"PO-Revision-Date: 2024-11-18 00:50+0800\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\src\main.cpp:56
+msgid ""
+"Announcement\n"
+"\n"
+"The data is sourced from the network.\n"
+"The analysis results are only for reference.\n"
+"Regarding the accuracy and quality issues of the data,\n"
+"this tool shall not be held responsible in any way."
+msgstr ""
+"免责声明\n"
+"\n"
+"数据来源于网络，"
+"分析结果仅为参考依据\n\n"
+"对于数据的准确性及质量问题，"
+"本工具概不负责"
+
+#: ..\src\main.cpp:61
+msgid "Announcement"
+msgstr "免责声明"
+
+#: ..\src\main.cpp:60 ..\src\StockData.cpp:69 ..\src\StockData.cpp:82
+msgid "Information"
+msgstr "信息"
+
+#: ..\src\MainWindow.cpp:7
+msgid "Stock Data Analyzer"
+msgstr "股票数据分析器"
+
+#: ..\src\MainWindow.cpp:36 ..\src\MainWindow.cpp:87
+msgid "Get Data"
+msgstr "获取数据"
+
+#: ..\src\MainWindow.cpp:38
+msgid "Select Stock Code:"
+msgstr "选择股票代码："
+
+#: ..\src\MainWindow.cpp:45
+#, c-format
+msgid "Copyright %s 2024 ByteSharky All rights reserved."
+msgstr "版权所有 %s 2024 魚䲆鱻䲜 保留所有权利。"
+
+#: ..\src\MainWindow.cpp:71
+msgid "Please enter a stock code"
+msgstr "请输入一个股票代码"
+
+#: ..\src\MainWindow.cpp:71 ..\src\StockData.cpp:249 ..\src\StockData.cpp:274
+#: ..\src\StockData.cpp:306
+msgid "Error"
+msgstr "错误"
+
+#: ..\src\MainWindow.cpp:76
+msgid "Querying..."
+msgstr "正在查询..."
+
+#: ..\src\StockData.cpp:50
+msgid "Failed to allocate memory"
+msgstr "内存分配失败"
+
+#: ..\src\StockData.cpp:69 ..\src\StockData.cpp:82
+msgid "No data available for analysis"
+msgstr "没有可供分析的数据"
+
+#: ..\src\StockData.cpp:145
+#, c-format
+msgid ""
+"Buy Orders Analysis (%d):\n"
+"Prices - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Transaction Amounts - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Most Recent - Price: %.2f, Volume: %d\n"
+"\n"
+"Sell Orders Analysis (%d):\n"
+"Prices - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Transaction Amounts - Max: %.2f, Min: %.2f, Avg: %.2f\n"
+"Most Recent - Price: %.2f, Volume: %d"
+msgstr ""
+"买入订单分析 (%d)：\n"
+"交易价格 - 最大值：%.2f，最小值：%.2f，平均值：%.2f\n"
+"交易金额 - 最大值：%.2f，最小值：%.2f，平均值：%.2f\n"
+"最近数据 - 价　格：%.2f，成交量：%d\n"
+"\n"
+"卖出订单分析 (%d)：\n"
+"交易价格 - 最大值：%.2f，最小值：%.2f，平均值：%.2f\n"
+"交易金额 - 最大值：%.2f，最小值：%.2f，平均值：%.2f\n"
+"最近数据 - 价　格：%.2f，成交量：%d"
+
+#: ..\src\StockData.cpp:161
+msgid "Analysis Results"
+msgstr "分析结果"
+
+#: ..\src\StockData.cpp:176
+msgid "Failed to initialize CURL"
+msgstr "初始化CURL失败"
+
+#: ..\src\StockData.cpp:197
+#, c-format
+msgid "CURL request failed: %s"
+msgstr "CURL请求失败：%s"
+
+#: ..\src\StockData.cpp:201
+#, c-format
+msgid "HTTP request failed with status code: %d"
+msgstr "HTTP请求失败，状态码 %d"
+
+#: ..\src\StockData.cpp:249
+msgid "Error: Missing fields in data"
+msgstr "错误：数据中缺少字段"
+
+#: ..\src\StockData.cpp:274
+#, c-format
+msgid "Error parsing data: %s"
+msgstr "解析数据时出错：%s"
+
+#: ..\src\StockData.cpp:305
+#, c-format
+msgid "Error occurred while fetching data on page %d: %s"
+msgstr "在获取第%d页数据时出错：%s"
+
+#: ../include/wx/msgdlg.h:278 ../src/common/stockitem.cpp:212
+msgid "Yes"
+msgstr "是"
+
+#: ../include/wx/msgdlg.h:279 ../src/common/stockitem.cpp:183
+msgid "No"
+msgstr "否"
+
+#: ../include/wx/msgdlg.h:280 ../src/common/stockitem.cpp:184
+#: ../src/msw/msgdlg.cpp:447 ../src/msw/msgdlg.cpp:751
+#: ../src/richtext/richtextstyledlg.cpp:293
+msgid "OK"
+msgstr "确认"
+
+#: ../include/wx/msgdlg.h:281 ../src/common/stockitem.cpp:151
+#: ../src/msw/msgdlg.cpp:447 ../src/msw/progdlg.cpp:884
+#: ../src/richtext/richtextstyledlg.cpp:296
+msgid "Cancel"
+msgstr "取消"
+
+#: ../include/wx/msgdlg.h:282 ../src/common/stockitem.cpp:169
+#: ../src/html/helpdlg.cpp:63 ../src/html/helpfrm.cpp:108
+#: ../src/osx/button_osx.cpp:39
+msgid "Help"
+msgstr "帮助"
