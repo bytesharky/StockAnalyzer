@@ -70,7 +70,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/3.31.0/CompilerIdC/CompilerIdC.exe
+        ../build/CMakeFiles/3.31.0/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -134,7 +134,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/3.31.0/CompilerIdCXX/CompilerIdCXX.exe
+        ../build/CMakeFiles/3.31.0/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -155,7 +155,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/CMakeScratch/TryCompile-c57tlh'
+        Change Dir: '../build/CMakeFiles/CMakeScratch/TryCompile-c57tlh'
         
         Run Build Command(s): "d:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4054e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.12.6+db5f6012c
@@ -248,7 +248,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/CMakeScratch/TryCompile-brp45m'
+        Change Dir: '../build/CMakeFiles/CMakeScratch/TryCompile-brp45m'
         
         Run Build Command(s): "d:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e6438.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.12.6+db5f6012c

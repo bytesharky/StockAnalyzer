@@ -14,11 +14,11 @@ C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/wxwidgets/wxWid
 C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/wxwidgets/wxWidgetsTargets-debug.cmake
 C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/wxwidgets/wxWidgetsTargets-release.cmake
 C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static/share/wxwidgets/wxWidgetsTargets.cmake
-C:/Users/Sharky/Desktop/新建文件夹/CMakeLists.txt
-C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/3.31.0/CMakeCCompiler.cmake
-C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/3.31.0/CMakeCXXCompiler.cmake
-C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/3.31.0/CMakeRCCompiler.cmake
-C:/Users/Sharky/Desktop/新建文件夹/build/CMakeFiles/3.31.0/CMakeSystem.cmake
+../CMakeLists.txt
+../build/CMakeFiles/3.31.0/CMakeCCompiler.cmake
+../build/CMakeFiles/3.31.0/CMakeCXXCompiler.cmake
+../build/CMakeFiles/3.31.0/CMakeRCCompiler.cmake
+../build/CMakeFiles/3.31.0/CMakeSystem.cmake
 D:/cmake-3.31/share/cmake-3.31/Modules/CMakeCCompiler.cmake.in
 D:/cmake-3.31/share/cmake-3.31/Modules/CMakeCCompilerABI.c
 D:/cmake-3.31/share/cmake-3.31/Modules/CMakeCInformation.cmake

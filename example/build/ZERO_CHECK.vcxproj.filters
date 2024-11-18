@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Sharky\Desktop\新建文件夹\build\CMakeFiles\b899e4bc943f8523accead3070d065e7\generate.stamp.rule">
+    <CustomBuild Include="..\build\CMakeFiles\b899e4bc943f8523accead3070d065e7\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>

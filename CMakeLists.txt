@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 # 设置vcpkg工具链文件路径相关的公共部分作为变量
-set(VCPKG_INSTALL_DIR "C:/Users/Sharky/Desktop/vcpkg/installed/x64-windows-static")
+set(VCPKG_INSTALL_DIR "d:/vcpkg/installed/x64-windows-static")
 
 # 设置 vcpkg 工具链
 set(CMAKE_TOOLCHAIN_FILE "${VCPKG_INSTALL_DIR}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")

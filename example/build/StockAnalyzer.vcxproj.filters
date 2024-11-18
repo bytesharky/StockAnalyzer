@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Sharky\Desktop\新建文件夹\src\Config.cpp">
+    <ClCompile Include="..\src\Config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sharky\Desktop\新建文件夹\src\LanguageLoader.cpp">
+    <ClCompile Include="..\src\LanguageLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sharky\Desktop\新建文件夹\src\MainWindow.cpp">
+    <ClCompile Include="..\src\MainWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sharky\Desktop\新建文件夹\src\StockData.cpp">
+    <ClCompile Include="..\src\StockData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sharky\Desktop\新建文件夹\src\main.cpp">
+    <ClCompile Include="..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Sharky\Desktop\新建文件夹\CMakeLists.txt" />
+    <CustomBuild Include="..\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\Sharky\Desktop\新建文件夹\resources.rc">
+    <ResourceCompile Include="..\resources.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
