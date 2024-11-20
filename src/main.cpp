@@ -1,22 +1,26 @@
-#include <wx/wx.h>
+#pragma once
+#include "Common.h"
+#include "Config.h"
+#include "LanguageLoader.h"
+#include "MainWindow.h"
+#include <locale.h>
 #include <wx/filename.h>
 #include <wx/stdpaths.h>
-#include "MainWindow.h"
-#include "Config.h"
-#include <locale.h>
-#include <windows.h>
-#include "LanguageLoader.h"
+#include <wx/wx.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <unistd.h>
+#endif
 
 class StockAnalyzerApp : public wxApp {
-
 private:
     wxLocale locale;
-
 public:
     bool OnInit() override {
         Config::getInstance().loadConfig();
-        const std::string language = Config::getInstance().getLanguage();
+        const int language = Config::getInstance().getLanguage();
 
         // 开启调试日志
         wxLog::AddTraceMask("i18n");
@@ -28,23 +32,8 @@ public:
         LanguageLoader* loader = new LanguageLoader();
         translations->SetLoader(loader);
 
-        // 尝试初始化语言环境，优先配置文件中指定的语言，
-        if (language.empty()) {
-            locale.Init(wxLocale::GetSystemLanguage());
-        } else {
-            // 查找指定的语言信息
-            const wxLanguageInfo* info = wxLocale::FindLanguageInfo(language);
-
-            if (info != nullptr) {
-                // 找到对应的语言信息，初始化语言环境
-                locale.Init(info->Language);
-            }
-            else {
-                // 如果没有找到，使用默认语言初始化语言环境
-                wxLogError("Language info not found for %s", language);
-                locale.Init(wxLocale::GetSystemLanguage());
-            }
-        }
+        // 设置语言
+        locale.Init(language);
 
         // 加载翻译文件
         if (!locale.AddCatalog("stock"))
@@ -67,8 +56,6 @@ public:
     }
 
 };
-
-
 
 int main(int argc, char** argv) {
     wxDISABLE_DEBUG_SUPPORT();

@@ -1,6 +1,8 @@
+#pragma once
+#include "Common.h"
 #include "Config.h"
-#include <fstream>
 #include <algorithm>
+#include <fstream>
 #include <wx/stdpaths.h>
 
 Config& Config::getInstance() {
@@ -10,12 +12,6 @@ Config& Config::getInstance() {
 
 Config::Config() {
     configFile_ = getProgramDir() + "/" + configFile_;
-}
-
-static std::string toLowerCase(const std::string& str) {
-    std::string result = str;
-    std::transform(result.begin(), result.end(), result.begin(), ::tolower);
-    return result;
 }
 
 // 获取程序所在目录路径的静态函数实现
@@ -67,4 +63,24 @@ bool Config::loadConfig() {
         return false;
     }
     return true;
+}
+
+const int Config::getLanguage() {
+    // 尝试初始化语言环境，优先配置文件中指定的语言
+    if (language_.empty()) {
+        return wxLocale::GetSystemLanguage();
+    }
+    else {
+        // 查找指定的语言信息
+        const wxLanguageInfo* language = wxLocale::FindLanguageInfo(language_);
+
+        // 找到对应的语言信息，初始化语言环境
+        if (language != nullptr) {
+            return language->Language;
+        }
+        // 如果没有找到，使用默认语言初始化语言环境
+        else {
+            return wxLocale::GetSystemLanguage();
+        }
+    }
 }

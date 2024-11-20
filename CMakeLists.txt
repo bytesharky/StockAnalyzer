@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(VCPKG_INSTALL_DIR "d:/vcpkg/installed/x64-windows-static")
 
 # 设置 vcpkg 工具链
-set(CMAKE_TOOLCHAIN_FILE "${VCPKG_INSTALL_DIR}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+set(CMAKE_TOOLCHAIN_FILE "d:/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
 
 # 设置各个库的相关路径
 set(wxWidgets_DIR "${VCPKG_INSTALL_DIR}/share/wxwidgets")

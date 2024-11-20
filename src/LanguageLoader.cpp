@@ -1,3 +1,4 @@
+#pragma once
 #include <wx/wx.h>
 #include <wx/dir.h>
 #include <wx/translation.h>

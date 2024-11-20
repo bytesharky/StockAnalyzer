@@ -9,10 +9,14 @@ public:
 
 private:
     void CreateStockPanel();
-    void OnGetData(wxCommandEvent& event);
+    void OnGetData();
+    void OnButton(wxCommandEvent& event);
+    void OnEnter(wxCommandEvent& event);
 
     wxPanel* mainPanel_;
+    wxBoxSizer* mainSizer_;
     wxComboBox* stockCombo_;
     wxButton* actionButton_;
-    wxBoxSizer* mainSizer_;
+    wxTextCtrl* stimeBox_;
+    wxTextCtrl* etimeBox_;
 };

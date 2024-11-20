@@ -8,7 +8,7 @@ public:
     static Config& getInstance();
     bool saveConfig(const std::string& stockCode = "");
     bool loadConfig();
-	const std::string& getLanguage() const {return language_;};
+	const int getLanguage();
     const std::vector<std::string>& getStockHistory() const { return stockHistory_; }
 
 private:
